@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Cocogoose-700';
+  src: url('../assets/Cocogoose-Pro-trial.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Cocogoose-500';
+  src: url('../assets/Cocogoose-Pro-Light-trial.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Cocogoose-400';
+  src: url('../assets/Cocogoose-Pro-Ultralight-trial.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --p-color: #272a31;
+  --s-color: #ec5242;
+  --t-color: #d3d3d3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--s-color);
+}
+
+/* ----- General Styles ----- */
+.pff-bold {
+  font-family: 'Cocogoose-700', sans-serif;
+}
+
+.pff-regular {
+  font-family: 'Cocogoose-500', sans-serif;
+}
+
+.pff-light {
+  font-family: 'Cocogoose-400', sans-serif;
+}
+
+.p-color {
+    color:var(--p-color);
+}
+
+.s-color {
+    color:var(--s-color);
+}
+
+.t-color {
+    color:var(--t-color);
+}
+
+/* ----- Specifics Classes Selectors ----- */
+.navbar-margin {
+    margin: 1em 2em;
+}
+
+/* ----- Specifics ID Selectors ----- */
+#header-landing {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.815), rgba(255, 255, 255, 0.753)),url('../img/desktop-background.png');
+}
