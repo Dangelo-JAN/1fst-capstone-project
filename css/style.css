@@ -8,6 +8,13 @@
 }
 
 @font-face {
+  font-family: 'Cocogoose-600';
+  src: url('../assets/Cocogoose-Pro-Semilight-trial.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
   font-family: 'Cocogoose-500';
   src: url('../assets/Cocogoose-Pro-Light-trial.ttf') format('truetype');
   font-style: normal;
@@ -22,6 +29,7 @@
 }
 
 :root {
+  --sff-400: 'Lato', sans-serif;
   --p-color: #272a31;
   --s-color: #ec5242;
   --t-color: #d3d3d3;
@@ -34,11 +42,20 @@ body {
 
 h1 {
   color: var(--s-color);
+  font-size: 5em;
+}
+
+header {
+  background-image: url('../img/mobile_bg.png');
 }
 
 /* ----- General Styles ----- */
 .pff-bold {
   font-family: 'Cocogoose-700', sans-serif;
+}
+
+.pff-semibold {
+  font-family: 'Cocogoose-600', sans-serif;
 }
 
 .pff-regular {
@@ -49,24 +66,128 @@ h1 {
   font-family: 'Cocogoose-400', sans-serif;
 }
 
+.sff-regular {
+  font-family: var(--sff-400);
+  font-weight: 400;
+}
+
 .p-color {
-    color:var(--p-color);
+  color:var(--p-color);
 }
 
 .s-color {
-    color:var(--s-color);
+  color:var(--s-color);
 }
 
 .t-color {
-    color:var(--t-color);
+  color:var(--t-color);
 }
 
 /* ----- Specifics Classes Selectors ----- */
-.navbar-margin {
-    margin: 1em 2em;
+.hamb-icon {
+  width: 2em;
+}
+
+.img-icon-style {
+  background-color:var(--t-color);
+}
+
+.main-card {
+  margin: 0.5em 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-h2 {
+  margin: 2em auto 0.75em;
+}
+
+.main-icon {
+  width: 60%;
+  padding: 5%;
+}
+
+.main-h3 {
+  align-self: center;
+}
+
+.p-main {
+  margin: auto 5%;
+  font-size: 1.2em;
 }
 
 /* ----- Specifics ID Selectors ----- */
 #header-landing {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.815), rgba(255, 255, 255, 0.753)),url('../img/desktop-background.png');
+  padding: 7em 1em;
+}
+
+#p-header {
+  background-color: #f9f9f9;
+  border: solid 5px #fff;
+  padding: 1em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#p-hello {
+  font-size: 2.5em;
+}
+
+#p-deal {
+  font-size: 3em;
+  padding-top: 1em;
+}
+
+#p-opo {
+  font-size: 2em;
+}
+
+#main-sec {
+  background-image: url('../img/pattern_bg.png');
+  background-repeat: repeat;
+  background-color: var(--p-color);
+}
+
+/* ----- Event's Selectors ----- */
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #edecff;
+  background-color: var(--t-color);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding-top: 3em;
+  list-style: none;
+}
+
+/* ----- Media Queries ----- */
+@media screen and (min-width: 768px)  {
+  header {
+    background-image: none;
+  }
+  /* ----- Specifics Classes Selectors ----- */
+  .navbar-margin {
+    margin: 1em 2em;
+  }
+
+  /* ----- Specifics ID Selectors ----- */
+  #container-nav {
+    padding: 0 13em; 
+  }  
+
+  #header-landing {
+    padding: 10em 13em;
+    background-image: url('../img/desktop-background.png');
+  }
+
+  #p-header {
+    background-color: #f9f9f9;
+    border: solid 5px #fff;
+    padding: 1em;
+  }
 }
