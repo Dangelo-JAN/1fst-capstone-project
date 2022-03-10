@@ -49,6 +49,12 @@ header {
   background-image: url('../img/mobile_bg.png');
 }
 
+hr {
+  height: 2px;
+  width: 5em;
+  margin: 0 auto;
+}
+
 /* ----- General Styles ----- */
 .pff-bold {
   font-family: 'Cocogoose-700', sans-serif;
@@ -147,6 +153,18 @@ header {
   background-color: var(--p-color);
 }
 
+#main-anchor {
+
+}
+
+#container-anchor {
+  width: 80%;
+  height: 20vh;
+  background-color: var(--s-color);
+  margin: 3em auto;
+  padding: auto;
+}
+
 /* ----- Event's Selectors ----- */
 .mobile-menu {
   position: fixed;
@@ -170,9 +188,24 @@ header {
   header {
     background-image: none;
   }
+
   /* ----- Specifics Classes Selectors ----- */
   .navbar-margin {
     margin: 1em 2em;
+  }
+
+  .main-icon {
+    width: 30%;
+    margin: auto;
+    padding: 2em 0;
+  }
+
+  .main-card {
+    margin: 2em 0.15em;
+  }
+
+  .main-card:hover {
+    border: 5px solid var(--t-color);
   }
 
   /* ----- Specifics ID Selectors ----- */
@@ -189,5 +222,22 @@ header {
     background-color: #f9f9f9;
     border: solid 5px #fff;
     padding: 1em;
+  }
+
+  #main-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    justify-content: center;
+  }
+
+  #main-anchor {
+    text-decoration: none;
+    margin: 1em auto 4em;
+    font-size: 1.5em;
+    border-bottom: solid 4px;
+  }
+
+  #main-anchor:hover {
+    color: var(--s-color);
   }
 }
