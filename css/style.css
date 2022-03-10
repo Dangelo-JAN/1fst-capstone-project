@@ -78,15 +78,15 @@ hr {
 }
 
 .p-color {
-  color:var(--p-color);
+  color: var(--p-color);
 }
 
 .s-color {
-  color:var(--s-color);
+  color: var(--s-color);
 }
 
 .t-color {
-  color:var(--t-color);
+  color: var(--t-color);
 }
 
 /* ----- Specifics Classes Selectors ----- */
@@ -95,7 +95,7 @@ hr {
 }
 
 .img-icon-style {
-  background-color:var(--t-color);
+  background-color: var(--t-color);
 }
 
 .main-card {
@@ -153,16 +153,11 @@ hr {
   background-color: var(--p-color);
 }
 
-#main-anchor {
-
-}
-
 #container-anchor {
   width: 80%;
   height: 20vh;
   background-color: var(--s-color);
   margin: 3em auto;
-  padding: auto;
 }
 
 /* ----- Event's Selectors ----- */
@@ -184,7 +179,7 @@ hr {
 }
 
 /* ----- Media Queries ----- */
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
   header {
     background-image: none;
   }
@@ -210,8 +205,8 @@ hr {
 
   /* ----- Specifics ID Selectors ----- */
   #container-nav {
-    padding: 0 13em; 
-  }  
+    padding: 0 13em;
+  }
 
   #header-landing {
     padding: 10em 13em;
