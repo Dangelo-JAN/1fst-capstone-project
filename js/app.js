@@ -75,7 +75,7 @@ teamSection.innerHTML = `
         </div>
       </div>
     </div>
-    <div class="d-element row-container">
+    <div class="row-container">
       <div class="d-flex col-12 col-md-6 partner-container">
         <img class="team-img" src="${team.photo[2]}"/>
         <div class="d-flex flex-column" id="info-partner">
@@ -95,7 +95,7 @@ teamSection.innerHTML = `
         </div>
       </div>
     </div>
-    <div class="d-element row-container">
+    <div class="row-container">
       <div class="d-flex col-12 col-md-6 partner-container">
         <img class="team-img" src="${team.photo[4]}"/>
         <div class="d-flex flex-column" id="info-partner">
