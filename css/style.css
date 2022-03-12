@@ -42,7 +42,7 @@ body {
 
 h1 {
   color: var(--s-color);
-  font-size: 5em;
+  font-size: 4em;
 }
 
 header {
@@ -94,6 +94,10 @@ hr {
   width: 2em;
 }
 
+.hello-about {
+  text-align: center;
+}
+
 .img-icon-style {
   background-color: var(--t-color);
 }
@@ -121,9 +125,84 @@ hr {
   font-size: 1.2em;
 }
 
+.header-about {
+  background-color: #f7f7f7;
+  background-image: url('../img/about_bg_01.png');
+  background-size: 90% 20%;
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.h3-about {
+  text-align: center;
+  margin: 3em auto 1em;
+}
+
+.logo-image {
+  display: block;
+  width: 90vw;
+  margin: 0 auto 3em;
+  border: solid 5px #f0f0f0;
+}
+
+.p-about-sec {
+  width: 90vw;
+  line-height: 2em;
+  text-align: center;
+  margin: 2em auto 3em;
+}
+
+.about-section {
+  border-bottom: solid 2px #f0f0f0;
+  padding-bottom: 3em;
+}
+
+.imagen-about {
+  margin: 1.5em auto;
+  width: 85vw;
+}
+
+.center-images {
+  text-align: center;
+}
+
+.last-section {
+  margin-bottom: 3em;
+}
+
+.bg-color {
+  background-color: var(--p-color);
+}
+
+.sponsor-img {
+  width: 20vw;
+}
+
+.margin-bottom {
+  padding-bottom: 2em;
+}
+
+.p-footer {
+  margin: 2em;
+}
+
 /* ----- Specifics ID Selectors ----- */
+
 #header-landing {
   padding: 7em 1em;
+}
+
+#header-about {
+  padding: 7em 1em;
+}
+
+#h1-about {
+  margin: 0 auto;
+  text-align: center;
 }
 
 #p-header {
@@ -131,11 +210,27 @@ hr {
   border: solid 5px #fff;
   padding: 1em;
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 2em;
+}
+
+#p-about {
+  background-color: #fff;
+  border: solid 5px #fff;
+  padding: 1em;
+  font-size: 1.2em;
+  line-height: 2em;
+  margin: 2em auto;
+  text-align: center;
 }
 
 #p-hello {
-  font-size: 2.5em;
+  font-size: 2em;
+}
+
+#hello-about {
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
 }
 
 #p-deal {
@@ -143,8 +238,20 @@ hr {
   padding-top: 1em;
 }
 
+#deal-about {
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: underline;
+  color: var(--p-color);
+}
+
 #p-opo {
   font-size: 2em;
+}
+
+#opo-about {
+  font-size: 1.3em;
+  text-align: center;
 }
 
 #main-sec {
@@ -161,6 +268,10 @@ hr {
 }
 
 /* ----- Event's Selectors ----- */
+#team-container {
+  padding: 0 1.3em 2em;
+}
+
 .mobile-menu {
   position: fixed;
   left: 0;
@@ -178,13 +289,83 @@ hr {
   list-style: none;
 }
 
+.team-h2 {
+  margin: 2em auto 0.75em;
+  color: var(--p-color);
+}
+
+.h-auto {
+  height: auto;
+  background-color: #fff;
+  padding-bottom: 3em;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.d-element {
+  display: none;
+}
+
+.team-img {
+  margin: 1em;
+}
+
+.team-name {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+}
+
+.team-tittle {
+  font-style: italic;
+}
+
+.team-comment {
+  margin-top: 1em;
+}
+
+.see-more {
+  text-align: center;
+  width: 90%;
+  height: 4em;
+  border: solid 2px #ece9e9;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.al-center {
+  margin: 1.5em auto;
+}
+
 /* ----- Media Queries ----- */
 @media screen and (min-width: 768px) {
   header {
     background-image: none;
   }
 
+  h1 {
+    font-size: 5em;
+  }
+
   /* ----- Specifics Classes Selectors ----- */
+  #container-nav {
+    background-color: #fff;
+  }
+
+  .header-about{
+    background-image: none;
+  }
+
+  #header-about {
+    background-image: url('../img/about_bg_01.png');
+    background-size: 90% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .navbar-margin {
     margin: 1em 2em;
   }
@@ -203,6 +384,38 @@ hr {
     border: 5px solid var(--t-color);
   }
 
+  .navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .logo-image {
+    width: 50vw;
+  }
+
+  .p-about-sec {
+    width: 60vw;
+  }
+
+  .imagen-about {
+    margin: 1.5em;
+    width: 40vw;
+  }
+
+  .margin-bottom {
+    display: none !important;
+  }
+
+  .p-footer {
+    background-color: var(--p-color);
+    color: #fff;
+  }
+
   /* ----- Specifics ID Selectors ----- */
   #container-nav {
     padding: 0 13em;
@@ -217,6 +430,14 @@ hr {
     background-color: #f9f9f9;
     border: solid 5px #fff;
     padding: 1em;
+  }
+
+  #p-hello {
+    font-size: 2.5em;
+  }
+
+  #hello-about {
+    font-size: 2.5em;
   }
 
   #main-container {
@@ -234,5 +455,31 @@ hr {
 
   #main-anchor:hover {
     color: var(--s-color);
+  }
+
+  #footer {
+    background-color: var(--p-color);
+  }
+
+  /* ----- Event's Selectors ----- */
+  #team-container {
+    padding: 0 5em 2em;
+  }
+
+  .row-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .d-element {
+    display: flex;
+  }
+
+  .see-more {
+    display: none;
+  }
+
+  .h-auto {
+    background-color: #f0f0f0;
   }
 }
