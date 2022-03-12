@@ -195,7 +195,6 @@ hr {
 }
 
 /* ----- Specifics ID Selectors ----- */
-
 #header-landing {
   padding: 7em 1em;
 }
@@ -366,11 +365,7 @@ hr {
   }
 
   /* ----- Specifics Classes Selectors ----- */
-  #container-nav {
-    background-color: #fff;
-  }
-
-  .header-about{
+  .header-about {
     background-image: none;
   }
 
@@ -405,8 +400,8 @@ hr {
 
   .navbar-brand {
     display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
     margin-right: 1rem;
     font-size: 1.25rem;
     text-decoration: none;
@@ -444,6 +439,7 @@ hr {
   /* ----- Specifics ID Selectors ----- */
   #container-nav {
     padding: 0 13em;
+    background-color: #fff;
   }
 
   #header-landing {
@@ -473,7 +469,6 @@ hr {
 
   #container-anchor {
     background-color: transparent;
-
   }
 
   #footer {
