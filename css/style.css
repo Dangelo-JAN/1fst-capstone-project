@@ -94,6 +94,10 @@ hr {
   width: 2em;
 }
 
+.close-icon {
+  display: none;
+}
+
 .hello-about {
   text-align: center;
 }
@@ -267,6 +271,17 @@ hr {
   margin: 3em auto;
 }
 
+#foo-index {
+  display: none !important;
+}
+
+#main-anchor {
+  text-decoration: none;
+  margin: auto;
+  font-size: 1.5em;
+  border-bottom: solid 4px;
+}
+
 /* ----- Event's Selectors ----- */
 #team-container {
   padding: 0 1.3em 2em;
@@ -359,6 +374,10 @@ hr {
     background-image: none;
   }
 
+  .close-icon {
+    display: none;
+  }
+
   #header-about {
     background-image: url('../img/about_bg_01.png');
     background-size: 90% 50%;
@@ -414,6 +433,12 @@ hr {
   .p-footer {
     background-color: var(--p-color);
     color: #fff;
+    font-size: 2em;
+  }
+
+  .p-f-index {
+    margin: 2em 2em;
+    font-size: 2em;
   }
 
   /* ----- Specifics ID Selectors ----- */
@@ -446,19 +471,17 @@ hr {
     justify-content: center;
   }
 
-  #main-anchor {
-    text-decoration: none;
-    margin: 1em auto 4em;
-    font-size: 1.5em;
-    border-bottom: solid 4px;
-  }
+  #container-anchor {
+    background-color: transparent;
 
-  #main-anchor:hover {
-    color: var(--s-color);
   }
 
   #footer {
     background-color: var(--p-color);
+  }
+
+  #foo-index {
+    display: flex !important;
   }
 
   /* ----- Event's Selectors ----- */

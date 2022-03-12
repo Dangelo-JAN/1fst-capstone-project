@@ -1,4 +1,5 @@
 const hambIcon = document.querySelector('#hamb-icon');
+const closeIcon = document.querySelector('.close-icon');
 const navbarNav = document.querySelector('#navbarNav');
 const sponsorsSection = document.querySelector('#sponsors-sec');
 const mainContainer = document.getElementById('main-container');
@@ -22,12 +23,14 @@ window.addEventListener('resize', () => {
 hambIcon.addEventListener('click', () => {
   navbarNav.classList.toggle('mobile-menu');
   navbarNav.classList.replace('justify-content-center', 'justify-content-start');
+  closeIcon.classList.toggle('close-icon');
 });
 
 document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click', () => {
   navbarNav.classList.replace('justify-content-center', 'justify-content-start');
   navbarNav.classList.toggle('mobile-menu');
   navbarNav.classList.toggle('show');
+  closeIcon.classList.toggle('close-icon');
 }));
 
 if (windowWidth < 768) {
@@ -112,10 +115,6 @@ teamSection.innerHTML = `
         </div>
       </div>
     </div>
-  </div>
-  <div class="see-more">
-    <span class="al-center">MORE</span>
-    <img class="al-center" src="img/arrow-down.png"/>
   </div>
 </section>`;
 
