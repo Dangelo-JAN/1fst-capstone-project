@@ -30,6 +30,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Cindy Shin from Creative Commons
 - Microverse
 - W3Schools
 - MDN Web Docs
@@ -37,4 +38,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is an attribution 4.0 International (CC BY 4.0).
