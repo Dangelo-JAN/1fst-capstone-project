@@ -194,6 +194,15 @@ hr {
   margin: 2em;
 }
 
+.c-white {
+  color: #fff;
+  margin: 0.5em 1em;
+}
+
+.bg-pc {
+  display: none;
+}
+
 /* ----- Specifics ID Selectors ----- */
 #header-landing {
   padding: 7em 1em;
@@ -268,10 +277,6 @@ hr {
   height: 20vh;
   background-color: var(--s-color);
   margin: 3em auto;
-}
-
-#foo-index {
-  display: none !important;
 }
 
 #main-anchor {
@@ -432,8 +437,16 @@ hr {
   }
 
   .p-f-index {
-    margin: 2em 2em;
+    color: var(--p-color);
     font-size: 2em;
+    background-color: #fff;
+  }
+
+  .bg-pc {
+    display: flex;
+    justify-content: end;
+    background-color: var(--p-color);
+    padding-right: 5em;
   }
 
   /* ----- Specifics ID Selectors ----- */
